@@ -80,7 +80,7 @@ section {
 
 /*検索ボックス*/
 
-#sbox2 {
+.sbox1 {
     border: 2px solid;
     /*枠の太さ・種類*/
     max-width: 300px;
