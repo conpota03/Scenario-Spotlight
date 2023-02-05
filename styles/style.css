@@ -81,11 +81,12 @@ section {
 /*検索ボックス*/
 
 #sbox2 {
+    border: 2px solid;
+    /*枠の太さ・種類*/
     max-width: 300px;
     height: 40px;
     border-radius: 30px;
-    outline: 0;
-    margin-bottom: 30px;
+    /*枠の角*/
     border-color: #777c84;
     /*枠の色*/
     background-color: #273241;
