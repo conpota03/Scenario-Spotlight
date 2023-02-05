@@ -5,21 +5,19 @@
 }
 
 .header-logo {
-    width: 80px;
-    margin: 1rem;
+    width: 60px;
+    margin: 10px;
 }
 
 .title {
     color: #bfbfbf;
     background-color: #36393F;
-    font-size: 50px;
-    margin: 1rem auto;
+    font-size: 40px;
 }
 
 .title-text {
     color: #777c84;
-    font-size: 50px;
-    margin: 1rem auto;
+    font-size: 40px;
 }
 
 .cf::after {
@@ -32,8 +30,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    justify-content: flex-start;
-    height: 100px;
+    height: 80px;
     background-color: #131924;
 }
 
