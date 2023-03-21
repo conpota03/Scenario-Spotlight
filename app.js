@@ -36,3 +36,56 @@
   });
 
 })();
+
+// // カウント
+// (() => {
+// let starcount = 0;
+// const starButton = document.getElementById("star");
+// starButton.addEventListener("click", function () {
+//   if (starButton.classList.contains("clicked")) {
+//     starcount--;
+//   } else {
+//     starcount++;
+//   }
+//   starButton.classList.toggle("clicked");
+//   document.getElementById("star-num").innerHTML = starcount + "遊んだ";
+// });
+// })();
+
+
+// カウント
+(() => {
+  class ClickedCount {
+    constructor(obj) {
+      console.log("obj", obj.changetxt);
+      const $elm = document.querySelector(obj.clickedName);
+      const $trigger = document.getElementById(obj.changeName);
+    
+
+      let count = 0;
+      $elm.addEventListener("click", function () {
+        if ($elm.classList.contains("clicked")) {
+          count--;
+        } else {
+          count++;
+        }
+        $elm.classList.toggle("clicked");
+        document.getElementById(obj.changeName).innerHTML =
+          count + obj.changetxt;
+      });
+    }
+  }
+
+  const starclickedcount = new ClickedCount({
+    clickedName: "#star",
+    changeName: "star-num",
+    changetxt: "遊んだ"
+  });
+
+
+    const heartlickedcount = new ClickedCount({
+      clickedName: "#heart",
+      changeName: "heart-num",
+      changetxt: "遊びたい",
+    });
+})();
