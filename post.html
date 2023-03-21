@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scenario-Spotlight</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- タイトル -->
+      <h1>Scenario-Spotlight</h1>
+
+      <nav>
+    <ul>
+      <li><a href="#">Home</a></li> <!-- ホームページへのリンク -->
+      <li><a href="#">Reviews</a></li> <!-- レビューページへのリンク -->
+      <li><a href="#">About</a></li> <!-- アバウトページへのリンク -->
+      <li><a href="#">Contact</a></li> <!-- コンタクトページへのリンク -->
+    </ul>
+      </nav>
+      <form class="search-form">
+          <input type="text" placeholder="Search..."> <!-- 検索ボックス -->
+          <button type="submit" class="Search" >Search</button> <!-- 検索ボタン -->
+      </form>
+    </header>
+    <form class="sinario-post">
+      <h1>シナリオ投稿フォーム</h1>
+    
+      <label for="scenario-name">シナリオ名:</label>
+      <input type="text" id="scenario-name" name="scenario-name" required>
+    
+      <label for="author">作者:</label>
+      <input type="text" id="author" name="author" required>
+    
+      <label for="system">システム名:</label>
+      <input type="text" id="system" name="system" required>
+    
+      <label for="player-num">PL人数:</label>
+      <select id="player-num" name="player-num" required>
+        <option value="" selected disabled hidden>選択してください</option>
+        <option value="1">1人</option>
+        <option value="2">2人</option>
+        <option value="3">3人</option>
+        <option value="4">4人</option>
+        <option value="5">5人</option>
+        <option value="6">6人以上</option>
+      </select>
+    
+      <label for="tags">タグ:</label>
+      <input type="text" id="tags" name="tags">
+    
+      <label for="synopsis">あらすじ:</label>
+      <textarea id="synopsis" name="synopsis" rows="5" required></textarea>
+    
+      <input type="submit" value="投稿">
+    </form>
+    <footer>
+      <p>&copy; 2023 Scenario-Spotlight</p>
+    </footer>
+  </body>
+</html>
