@@ -1,0 +1,224 @@
+/* すべての要素のマージンとパディングを0に設定し、box-sizingプロパティをborder-boxに設定します */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* フォントファミリーをArial、sans-serifに設定します */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ヘッダー要素のスタイルを定義します */
+header {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ナビゲーションメニューのスタイルを定義します */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* フォームのスタイルを定義します */
+form {
+  display: flex;
+  align-items: center;
+}
+
+form input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* メイン要素のスタイルを定義します */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* シナリオを表示するコンテナーのスタイルを定義します */
+.scenario-container {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+/* シナリオを表示するコンテナーのスタイルを定義します */
+.scenarios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* シナリオ画像のスタイルを定義します */
+.scenarios-container img {
+  width: 80%;
+}
+
+/* シナリオのスタイルを定義します */
+.scenario {
+  margin: 10px;
+  width: calc(25% - 20px);
+}
+
+.scenario img {
+  width: 100%;
+}
+
+/* シナリオの情報を表示するコンテナーのスタイルを定義します */
+.scenario-info {
+  padding: 10px;
+  margin: auto;
+
+}
+
+.scenario-detail-main .scenario-info {
+  padding: 10px;
+  margin: auto;
+  /* サンプル用 中央寄せ */
+  box-sizing: border-box;
+  /* 罫線も含む長さ      */
+  width: auto;
+  /* BOXの幅             */
+  height: 100%;
+  /* BOXの高さ           */
+  background: #f2f2f2;
+  /* BOXの背景色         */
+  /* 枠線の指定          */
+  display: flex;
+  /* flex属性に変更      */
+  justify-content: center;
+  /* 子要素の横位置      */
+  /* align-items: center; */
+  /* 子要素の縦位置      */
+  flex-direction: column;
+  /* 子要素の並ぶ向き */
+}
+
+.scenario-title {
+  font-size: 30px;
+}
+
+.scenario-info h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.scenario-info p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+
+
+/* .flex-direction .scenario-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .header-actions */
+
+.button-icon {
+  /* display: inline; */
+  margin: 8px;
+  font-size: 18px;
+
+}
+
+
+/* シナリオ詳細情報のスタイルを定義します */
+.scenario-detail-main {
+  display: flex;
+}
+
+.Synopsis h2 {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  background-color: #333;
+  color: #f2f2f2;
+  pointer-events: all;
+}
+
+.Synopsis h3 {
+  background: #f2f2f2;
+  color: #333;
+  margin: 5px;
+}
+
+
+/* レビュー */
+.accordion {
+  width: auto;
+  margin: 0;
+  padding: 10px;
+}
+
+.accordion-trigger {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  border-top: 2px solid #ffffff;
+  text-decoration: none;
+  background-color: #000;
+  color: #ccc;
+}
+
+.accordion-contents {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  background: #fff;
+  border-top: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  display: none;
+}
+
+/* フッター要素のスタイルを定義します */
+footer {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
