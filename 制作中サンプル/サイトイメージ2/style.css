@@ -1,0 +1,89 @@
+/* 全体のスタイル */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ヘッダー */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-box button {
+  font-size: 16px;
+  padding: 8px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.scenario {
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scenario a {
+  display: block;
+  text-decoration: none;
+}
+
+.scenario img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.scenario-info {
+  padding: 20px;
+}
+
+.scenario-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.scenario-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #888;
+}
